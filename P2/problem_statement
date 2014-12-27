@@ -1,0 +1,11 @@
+Create a process tree.
+
+Each process should print the text, its pid, ppid. Text in one level should not appear until 
+all text is printed in the previous level. 
+
+Tree:
+This
+is|network
+Prog|ramming|lab|1
+
+or (|) means - can print in any order.
