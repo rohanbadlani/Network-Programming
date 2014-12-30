@@ -1,0 +1,3 @@
+1. Block all the signals. Then ask user to generate any signals, any number of times. When the user enters 0, print the pending signals. Once you unblock all the signals, 
+2. If SIGINT is received, ask input from the user, for the a program such as “ls –l” and create a new process and execute the program inside that process 
+3. When SIGQUIT is received, It will print pid of any children still executing (if any) and then exit. 
