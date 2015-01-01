@@ -1,0 +1,5 @@
+C program that uses semaphores to keep track of children. 
+ 
+1. Process creates a semaphore and initializes it to n. It also creates n children where n is the command line argument. 
+2. Each child reduces semaphore by 1, prints its pid, semaphore value and exits. 
+3. Parent should wait till all children exit by waiting on semaphore
