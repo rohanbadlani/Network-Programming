@@ -1,0 +1,16 @@
+Process Pipes:
+
+P1->C1->C2->C3->C4->C5->P1 (P1 print output)
+
+1. P1 is the parent and it creates 5 children C1...C5. Note that all children are siblings. 
+2. P1 sets up pipes in way that all children are shown in the above diagram. 
+3. P1 writes a string (taken as command EOF and every child performs an operation.) Every child operation for each child is 
+
+	a. C1: lower to upper case
+	b. C2: remove first char
+	c. C3: remove last char
+	d. C4: remove first char
+	e. C5: remove last char
+
+4. Every child prints its name.
+5. Final output is printed by parent.
