@@ -1,0 +1,13 @@
+VERIFYING WEBPAGES (HTTP GET REQUEST)
+
+1. The verifyWebpages.c is a program that uses file webpages.txt for urls.
+2. Retrieve the IP ADDRESS (IPv4 or IPv6) corresponding to the url specified. 
+3. If found, i.e Domain Exists.
+	a. Connect to the webserver requested on Port 80.
+	b. If the server serves at port 80
+		It sends a HTTP GET Request for the Page requested to verify of page exists.
+	   If it doesn't, continue to next URL.
+	
+4. If not found: Continue to next URL.
+
+I'll be extending this so that you can download all the links in the webpages.txt. (Something like wget)
