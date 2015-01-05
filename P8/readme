@@ -1,0 +1,15 @@
+1. RUNNING INSTRUCTIONS:
+./a.out <server_name> <server_port> <N> <req_per_con> <file_to_req>\nThe value of N must be less than 1000;
+
+2. GLOBAL ARRAY:
+The array is of size 1000. So pls use the number of threads(N) as <1000.
+
+3. N Threads created, All of them detached.
+
+4. Each is passed the server_name, file_to_req, req_to_con parameters from parent thread.
+
+5. Each of them makes req_to_con number of connections, gets response time in microsec, takes avg and stores in global array.
+
+6. GLOBAL ARRAY IS SHARED BETWEEN THREADS. SO MUTEX (write_mutex) used to ensure consistency.
+
+7. Parent Thread in the meanwhile joins all the threads(thus waits for others to finish) and then finds the avg of the GLOBAL ARRAY to find FINAL_AVG_RESPONSE_TIME.	
