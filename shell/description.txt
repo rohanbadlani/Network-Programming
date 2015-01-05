@@ -1,0 +1,22 @@
+This is a Shell Program.
+Supports:
+
+1. Forground Jobs: That is the shell will fork a child. Execute your command and will wait for it to finish/terminate. Eg: shell$ ls
+
+2. Background Jobs: That is the shell will fork a child. Execute your command and will NOT wait for it to finish/terminate and run it in background. Eg: shell$ ls &
+
+Every job is assigned a id
+
+3. shell$ jobs
+	The jobs command lets you see all running jobs. (Only background jobs will be displayed as they are the ones only running.
+
+4. bg <jid>
+	The bg command will make a foreground job restart as a background job.
+
+5. fg <jid>
+	The fg command will make a background job come into foreground and the shell will wait for it to terminate.
+
+
+TODO: Implement User Groups so that sognal properly work.
+
+
